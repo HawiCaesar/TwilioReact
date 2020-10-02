@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === "DEV") {
 }
 
 app.get("/token", function (request, response) {
-  var identity = fake.name.findName();
+  var identity = faker.name.findName();
 
   // Create an access token, we sign it and send to the client
   var token = new AccessToken(
